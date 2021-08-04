@@ -1,0 +1,330 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700&display=swap");
+
+:root{
+  --header-height: 3rem;
+  --nav-width: 68px;
+  --first-color: #18b35e;
+  --first-color-light: #135f2d;
+  --white-color: #F7F6FB;
+  --body-font: 'Nunito', sans-serif;
+  --normal-font-size: 1rem;
+  --z-fixed: 100;
+}
+*,::before,::after{
+  box-sizing: border-box;
+}
+body{
+  position: relative;
+  margin: var(--header-height) 0 0 0;
+  padding: 0 1rem;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  transition: .5s;
+}
+a{
+  text-decoration: none;
+}
+.header{
+  width: 100%;
+  height: var(--header-height);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  background-color: var(--white-color);
+  z-index: var(--z-fixed);
+  transition: .5s;
+}
+.header__toggle{
+  color: var(--first-color);
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.header__img{
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.header__img img{
+  width: 40px;
+}
+.l-navbar{
+  position: fixed;
+  top: 0;
+  left: -30%;
+  width: var(--nav-width);
+  height: 100vh;
+  background-color: var(--first-color);
+  padding: .5rem 1rem 0 0;
+  transition: .5s;
+  z-index: var(--z-fixed);
+}
+.nav{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+.nav__logo{
+  margin-left: 6px;
+
+}
+.nav__link{
+  display: grid;
+  grid-template-columns: max-content max-content;
+  align-items: center;
+  column-gap: 1rem;
+  padding: .3rem 0 .3rem 1.3rem;
+}
+.nav__logo-icon{
+  font-size: 1.25rem;
+  color: var(--white-color);
+}
+.nav__logo-name{
+  color: var(--white-color);
+  font-weight: 700;
+}
+.nav__link{
+  position: relative;
+  color: var(--first-color-light);
+  margin-bottom: 1.5rem;
+  transition: .3s;
+}
+.nav__link:hover{
+  color: var(--white-color);
+}
+.nav__icon{
+  font-size: 1.25rem;
+}
+.show{
+  left: 0;
+}
+.body-pd{
+  padding-left: calc(var(--nav-width) + 1rem);
+}
+.active{
+  color: var(--white-color);
+}
+.active::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 2px;
+  height: 32px;
+  background-color: var(--white-color);
+}
+@media screen and (min-width: 768px){
+  body{
+    margin: calc(var(--header-height) + 1rem) 0 0 0;
+    padding-left: calc(var(--nav-width) + 2rem);
+  }
+  .header{
+    height: calc(var(--header-height) + 1rem);
+    padding: 0 2rem 0 calc(var(--nav-width) + 2rem);
+  }
+  .header__img{
+    width: 40px;
+    height: 40px;
+  }
+  .header__img img{
+    width: 45px;
+  }
+  .l-navbar{
+    left: 0;
+    padding: 1rem 1rem 0 0;
+  }
+  .show{
+    width: calc(var(--nav-width) + 156px);
+  }
+  .body-pd{
+    padding-left: calc(var(--nav-width) + 188px);
+  }
+}
+Section{
+  width: auto;
+  height: auto;
+  margin-right: 1px;
+  margin-top: 30px;
+  float: left;
+  background-color: #45b979;
+  opacity: 1;
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: small;
+}
+.SubMenuSection{
+  width: 100px;
+  height: 100px;
+  margin-right: 1px;
+  margin-left: 1px;
+  margin-top: 1px;
+  float: left;
+  background-color: rgb(233, 233, 233);
+  opacity: 1;
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 10px;
+  border-radius: 10px;
+  box-shadow: 0 5px 5px 0 rgb(0 0 0 / 25%);
+}
+.MenuAgrupamento{
+  box-shadow: 0 5px 5px 0 rgb(0 0 0 / 25%);
+  margin-left: 39px;
+  margin-bottom: 30px;
+}
+#Agendamentos{
+  font-family: var(--body-font);
+  font-style:normal
+}
+#Inicio{
+  color: #45b979;
+  font-family: var(--body-font);
+}
+.MenuSection{
+  color:whitesmoke;
+  margin-top: 10px;
+}
+.SubMenuSection{
+  margin-top: 10px;
+  color:rgb(88, 88, 88);
+  width: auto;
+  height: auto;
+  font-family: var(--body-font);
+}
+#Relatórios{
+  font-family: var(--body-font);
+}
+.container{
+  margin-top: 210px;
+  width: 1080px;
+  height: 300px;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  box-sizing: border-box;
+  padding: 15px;
+  background-color:rgb(233, 233, 233);
+}
+.bar-title{
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  color: #444444;
+  margin: 0 0 20px 0;
+  text-align: left;
+  font-family: var(--body-font);
+}
+.bar{
+  background-color: #f2f2f1;
+  width: 100%;
+  height: 25px;
+  margin-bottom: 40px;
+  border-radius: 20px;
+}
+.bar-inner{
+  background-color: #2ecc71;
+  width: 0%;
+  height: 100%;
+  border-radius: 20px;
+}
+.bar-inner:after{
+  position: absolute;
+  right: 2.5%;
+  content: attr(data-percent);
+  line-height: 30px;
+  color: rgb(87, 87, 87);
+  
+}
+.bar-90{
+  background-color: #2ecc71;
+  width: 90%;
+  height: 100%;
+}
+.bar-60{
+  background-color: #2ecc71;
+  width: 60%;
+  height: 100%;
+}
+.bar-40{
+  background-color: #2ecc71;
+  width: 40%;
+  height: 100%;
+}
+.bar-20{
+  background-color: #2ecc71;
+  width: 20%;
+  height: 100%;
+}
+.Descricao{
+  font-weight: 70;
+}
+ul {list-style-type: none;}
+.month {
+  padding: 70px 25px;
+  width: 100%;
+  background: #2ecc71;
+  text-align: center;
+  border-radius: 20px;
+}
+.month ul {
+  margin: 0;
+  padding: 0;
+  border-radius: 20px;
+}
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color:#ddd;
+  border-radius: 20px;
+}
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+  border-radius: 20px;
+}
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size:12px;
+  color: #777;
+}
+.days li .active {
+  padding: 5px;
+  background: #2ecc71;
+  border-radius: 50%;
+  color: white !important
+}

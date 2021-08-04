@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="_assets_Tela_Inicial/css/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <title>Tela Inicial</title>
+</head>
+
+<body id="body-pd">
+    <header class="header" id="header">
+        <div class="header__toggle">
+            <i class='bx bx-menu' id="header-toggle"></i>
+        </div>
+        <h2 id="Inicio">Início</h2>
+        <div class="header__img">
+            <img src="_assets_Tela_Inicial/img/perfil.jpg" alt="">
+        </div>
+    </header>
+
+    <div class="l-navbar" id="nav-bar">
+        <nav class="nav">
+            <div>
+                <a href="#" class="nav__logo">
+                    <img src="_Imagens/Opus-TelaInicial.png" alt="">
+                </a>
+                <div class="nav__list">
+                    <a href="#" class="nav__link active">
+                        <i class='bx bx-grid-alt nav__icon'></i>
+                        <span class="nav__name">Início</span>
+                    </a>
+
+                    <a href="#" class="nav__link">
+                        <i class='bx bx-folder nav__icon'></i>
+                        <span class="nav__name">Atendimento</span>
+                    </a>
+
+                    <a href="#" class="nav__link">
+                        <i class='bx bx-bookmark nav__icon'></i>
+                        <span class="nav__name">Agenda</span>
+                    </a>
+
+                    <a href="#" class="nav__link">
+                        <i class='bx bx-user nav__icon'></i>
+                        <span class="nav__name">Pacientes</span>
+                    </a>
+
+                    <a href="#" class="nav__link">
+                        <i class='bx bx-message-square-detail nav__icon'></i>
+                        <span class="nav__name">Cadastros</span>
+                    </a>
+
+                    <a href="#" class="nav__link">
+                        <i class='bx bx-bar-chart-alt-2 nav__icon'></i>
+                        <span class="nav__name">Call Center</span>
+                    </a>
+                </div>
+            </div>
+            <a href="index.html" class="nav__link">
+                <i class='bx bx-log-out nav__icon'></i>
+                <span class="nav__name">Sair</span>
+            </a>
+        </nav>
+    </div>
+
+    <section class="MenuAgrupamento">
+        <h2 id="Agendamentos" class="MenuSection">Agendamentos</h2>
+        <section>
+            <h1 id="SubMenu" class="SubMenuSection">Atendido
+                <p><i class="material-icons grande-70" title="">check</i></p>
+                <p class="Descricao">Pacientes Atendidos: 40</p>
+            </h1>
+        </section>
+        <section>
+            <h1 id="SubMenu" class="SubMenuSection">Espera
+                <p><i class="material-icons grande-70" title="">timer</i></p>
+                <p class="Descricao">Pacientes em Espera: 4</p>
+            </h1>
+        </section>
+        <section>
+            <h1 id="SubMenu" class="SubMenuSection">Agendado
+                <p><i class="material-icons grande-70" title="">event</i></p>
+                <p class="Descricao">Pacientes Agendados: 12</p>
+            </h1>
+        </section>
+    </section>
+
+    <section class="MenuAgrupamento" id="Atendimentos">
+        <h2 id="Agendamentos" class="MenuSection">Atendimento </h2>
+        <section>
+            <h1 id="SubMenu" class="SubMenuSection">
+                <p><i class="material-icons grande-70" title="">person</i></p>
+                <p>Matheus Sizervinks Ferreira</p>
+                <p class="Descricao">05/05/2005 - 70 Anos, 4 Meses e 10 Dias :)</p>
+            </h1>
+        </section>
+    </section>
+  
+    <section class="MenuAgrupamento" id="Vanilla">
+        <h1 id="Relatórios" class="MenuSection">Relatórios</h1>
+        <section>
+            <h1 id="SubMenu" class="SubMenuSection">Gestão de Carteira
+                <div class="container">
+                    <h3 class="bar-title">Proprio Domicilio</h3>
+                    <div class="bar">
+                        <div class="bar-inner bar-90" data-percent="90%"></div>
+                    </div>
+                    <h3 class="bar-title">Clinica Unimed Pleno</h3>
+                    <div class="bar">
+                        <div class="bar-inner bar-60" data-percent="60%"></div>
+                    </div>
+                    <h3 class="bar-title">Clinica Unimed Pleno - Conceição</h3>
+                    <div class="bar">
+                        <div class="bar-inner bar-40" data-percent="40%"></div>
+                    </div>
+                    <h3 class="bar-title">Clinica Unimed Pleno - Delta</h3>
+                    <div class="bar">
+                        <div class="bar-inner bar-20" data-percent="20%"></div>
+                    </div>
+                </div>
+            </h1>
+        </section>
+    </section>
+
+    <section class="MenuAgrupamento" id="Aniversariantes">
+        <h2 id="Agendamentos" class="MenuSection">Aniversariantes</h2>
+        <section>
+            <h1 id="SubMenu" class="SubMenuSection">
+                <p>Próximos Aniversariantes</p>
+                <p class="Descricao">* Matheus Sizervinks: 24/05 :)</p>
+                <div class="month">
+                    <ul>
+                      <li class="prev">&#10094;</li>
+                      <li class="next">&#10095;</li>
+                      <li>Maio<br><span style="font-size:18px">2021</span></li>
+                    </ul>
+                  </div>
+                  
+                  <ul class="weekdays">
+                    <li>Seg</li>
+                    <li>Ter</li>
+                    <li>Qua</li>
+                    <li>Qui</li>
+                    <li>Sex</li>
+                    <li>Sab</li>
+                  </ul>
+                  
+                  <ul class="days">
+                    <li>1</li>
+                    <li>2</li>
+                    <li>3</li>
+                    <li>4</li>
+                    <li>5</li>
+                    <li>6</li>
+                    <li>7</li>
+                    <li>8</li>
+                    <li>9</li>
+                    <li><span class="active">10</span></li>
+                    <li>11</li>
+                    <li>12</li>
+                    <li>13</li>
+                    <li>14</li>
+                    <li>15</li>
+                    <li>16</li>
+                    <li>17</li>
+                    <li>18</li>
+                    <li>19</li>
+                    <li>20</li>
+                    <li>21</li>
+                    <li>22</li>
+                    <li>23</li>
+                    <li>24</li>                   
+                    </ul>
+            </h1>
+        </section>
+    </section>
+
+    <script src="_assets_Tela_Inicial/js/main.js"></script>
+    <script type="text/javascript" src="_js/vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelector("section"), {
+            max: 3,
+            speed: 5,
+            glare: true,
+            "max-glare": 0.3,
+        });
+    </script>
+    <script src="_assets_Tela_Inicial/js/main.js"></script>
+    <script type="text/javascript" src="_js/vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelector("#Vanilla"), {
+            max: 3,
+            speed: 5,
+            glare: true,
+            "max-glare": 0.3,
+        });
+    </script>
+    <script src="_assets_Tela_Inicial/js/main.js"></script>
+    <script type="text/javascript" src="_js/vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelector("#Atendimentos"), {
+            max: 3,
+            speed: 5,
+            glare: true,
+            "max-glare": 0.3,
+        });
+    </script>
+    <script src="_assets_Tela_Inicial/js/main.js"></script>
+    <script type="text/javascript" src="_js/vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelector("#Aniversariantes"), {
+            max: 3,
+            speed: 5,
+            glare: true,
+            "max-glare": 0.3,
+        });
+    </script>
+
+</body>
+
+</html>

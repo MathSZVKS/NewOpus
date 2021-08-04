@@ -1,0 +1,81 @@
+body{
+  margin: 0;
+  padding: 0;
+  background: #f0e7e7;
+  background-image: url("Opus.jpg");
+}
+.box{
+  width: 300px;
+  padding: 40px;
+  position: absolute;
+  top: 20%;
+  left: 40%;
+  background: #f0e7e7;
+  text-align: center;
+  border-radius: 20px;
+  Opacity: 0.7
+}
+.box h1{
+  color: rgb(46, 45, 45);
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.box input[type = "text"],.box input[type = "password"]{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #037425;
+  padding: 14px 10px;
+  width: 200px;
+  outline: none;
+  color: rgb(39, 39, 39);
+  border-radius: 24px;
+  transition: 0.25s;
+}
+.box input[type = "text"]:focus,.box input[type = "password"]:focus{
+  width: 280px;
+  border-color: #037425;
+}
+.box input[type = "submit"]{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #037425;
+  padding: 14px 40px;
+  outline: none;
+  color: rgb(37, 37, 37);
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+.box input[type = "submit"]:hover{
+  background: #037425;
+}
+
+.box input[type = "button"]{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #037425;
+  padding: 14px 40px;
+  outline: none;
+  color: rgb(46, 46, 46);
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+.box input[type = "button"]:hover{
+  background: #037425;
+}
+
+h1 { font-family: "Open Sans"; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; } h3 { font-family: "Open Sans"; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } p { font-family: "Open Sans"; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: "Open Sans"; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } pre { font-family: "Open Sans"; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; }
+
+
+
+
